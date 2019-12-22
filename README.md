@@ -9,4 +9,4 @@ Configuração do ambiente
   
   Insalar via pip: boto, boto3, ansible, docker
   
-  Buildar, dar Push no DockerHub e depois push na máquina da AWS
+  Buildar, dar Push no DockerHub e depois push na máquina da AWS.
