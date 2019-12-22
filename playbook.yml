@@ -1,0 +1,17 @@
+- hosts: localhost
+  tasks:
+    - name: Pull imagem do docker
+      docker_image:
+        name: jhonatan6146/test-python
+    - name: Check if container is present
+      docker_container:
+        name: test-python
+        state: present
+        image: luizkt/test-python
+        command: sleep infinity
+    - name: Run docker image
+      docker_container:
+        name: est-python
+        image: jhonatan6146/test-python
+        ports:
+          - '0.0.0.0:5000:5000'
